@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 9/02/2020 11:15:54 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="hbm.Products" table="PRODUCTS">
+        <id name="idItem" type="int">
+            <column name="ID_ITEM" precision="5" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="nombre" type="string">
+            <column name="NOMBRE" length="50" />
+        </property>
+        <property name="cantidad" type="java.lang.Long">
+            <column name="CANTIDAD" precision="10" scale="0" />
+        </property>
+        <property name="codigoInv" type="string">
+            <column name="CODIGO_INV" length="10" />
+        </property>
+    </class>
+</hibernate-mapping>
